@@ -6,8 +6,10 @@ class TopTokens(scrapy.Spider):
 
   def parse(self, response):
     trend_tokens = response.css('p>strong::text').getall()
-
+    number = 1
     for token in trend_tokens:
       yield {
-        'name': token,
+        number: token,
       }
+      number += 1
+
