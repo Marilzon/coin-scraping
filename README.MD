@@ -6,6 +6,7 @@ site fonte: https://beincrypto.com.br/converter
 # dependencias
  - python3
  - scrapy
+
 # execução do script
 ```
 scrapy runspider trend-scraping.py -o tokens.json
