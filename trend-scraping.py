@@ -6,14 +6,9 @@ class TopTokens(scrapy.Spider):
 
   def parse(self, response):
     trend_tokens = response.css('p>strong::text').getall()
-
+    number = 1
     for token in trend_tokens:
-      name = 'id'
       yield {
-        name: token,
+        number: token,
       }
-
-    next_page = response.xpath('//a[contains(@href, "/converter/2")]/@href').get()
-
-    if next_page is not None:
-      yield scrapy.Request(response.urljoin(next_page), callback=self.parse)
+      number = number + 1
