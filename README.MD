@@ -10,7 +10,7 @@ site fonte: https://beincrypto.com.br/converter
 ```
 scrapy runspider trend-scraping.py -o tokens.json
 ```
-Sera gerado um arquivo .json com os nomes dos 40 tokens atuais.
+Sera gerado um arquivo .json com os tokens enumerados.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
