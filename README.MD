@@ -1,4 +1,4 @@
-# Tokens Scraping
+# Coin Scraping
 ### script para retornar as 20 criptosmoedas com maior volume de mercado!
 
 site fonte: https://beincrypto.com.br/converter
